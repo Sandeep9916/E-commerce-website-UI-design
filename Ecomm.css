@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background-color:#c2939b;
+}
+/* navbar section start */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ebe9e9;
+    position: fixed;
+    color:#000 ;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 2;
+} ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    /* margin: 0 15px; */
+   
+}
+ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    font-size: 1rem;
+    margin-inline:22px ;
+    font-weight: 500;
+}
+ul li a:hover{
+    color:#f8022b;
+    border-bottom: 1px solid #f8022b;
+    
+}
+.logo h1{
+    font-size: 1.7rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo h1 a{
+    text-decoration: none;
+    color: #000;
+
+}
+
+nav i{
+    font-size: 1.7rem;
+    transition:  .2s;
+}
+nav i:hover{
+    color:#f8022b;
+}
+/* navbar section end */
+/* main part start */
+
+.main{
+   display: flex; 
+   justify-content: space-around;
+   margin-top: 60px;
+   background-color: #b06d78;
+   width: 100%;
+
+}
+.main img {
+ width: 700px; 
+
+ 
+ 
+}
+.main h1{
+ font-size: 66px;  
+ color: #fff; 
+}
+.main p{
+    margin-top: 22px;
+   
+}
+.main button{
+    margin-top: 10px;
+    width: 140px;
+    height: 43px;
+    background-color:#f8072f ;
+    color: #fff;
+    font-size: 22px;
+    border: none;
+    border-radius: 22px;
+    transition: .5s;
+}
+.main button:hover{
+    background-color: #fff;
+    color: #f8022b
+ 
+}
+.mainText{
+    margin-top: 200px;
+    margin-left: 10px;
+
+}
+/* shop now section start */
+
+.shop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #c2939b;
+}
+.shapcard{
+    width: 300px;
+    height: 360px;
+   
+    padding: 16px;
+    margin-inline: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+.shop img{
+    width: 100%;
+    height: 90%;
+  
+
+}
+.shapcard p{
+    margin-top: 10px;
+}
+.shapcard:hover p{
+  
+
+transform: translateY(-29px);
+    transition: all .9s;
+background-color: #000;
+height: 44px;
+cursor: pointer;
+
+
+
+}
+.shapcard:hover img{
+    transform: scale(1.2);
+    transition: all .9s;
+    opacity: .4;
+
+}
+.shapcard p:hover{
+
+ /* margin-top: -44px; */
+ height: 44px;
+ position: absolute;
+ display: flex;
+ width: 268px;
+ align-items: center;
+ justify-content: center;
+ transition: all 1s ease;
+ 
+}
+.head h1{
+    text-align: center;
+    text-transform:capitalize;
+    background-color: #c2939b;
+    padding: 88px;
+}
+
+
+
+
+/* shop now section end */
+/* trend section start ////////////// */
+.trend{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 983px;
+    height: 320px;
+    background-color: #000;
+    margin: auto;
+   overflow-x: hidden;
+  position: relative;
+}
+
+.trend-card{
+    width: 100%;
+    position: absolute;
+ 
+ overflow-wrap: break-word;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transition: all 1s ease;
+   
+  
+}
+.trend img{
+    width: 300px;
+    height: 300px;
+    margin-inline: 20px
+}
+/* trend Section Start //////////// */
+/* blog section start */
+.blog{
+    background-color:#c2939b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+.blog-card{
+    width: 300px;
+    height: 400px;
+    margin: 0 20px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color:#c29da3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px #c29da3;
+}
+.blog-card p {
+   color: #fff;
+   font-size: 1rem;
+   margin-top: 10px ;
+}
+.blog-card a{
+    text-decoration: none;
+    color: #fff;
+    background: #6d6d6d;
+    padding: 5px;
+    margin: 10px;
+    margin-bottom: 10px;
+
+}
+.blog-card a:hover{
+    background: #fff;
+    color: #6d6d6d;
+cursor: pointer;
+
+}
+
+.blog-card img{
+width: 250px;
+height: 300px;
+border-radius: 16px;
+cursor: pointer;
+box-shadow: 0 0 5px #c29da3;
+
+
+
+
+}
+/* footer/////// */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 88px;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 300px;
+}
+.tect h2{
+    margin: 10px;
+    text-align: center;
+}
+.tect p{
+    margin: 10px;
+    text-align: center;
+}
+.tect1{
+    width: 220px;
+}
+.tect1 h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.cardDetial{
+   position: fixed;
+   left: 50%;
+   right: 50%;
+   transform: translate(-50%,40%); 
+ 
+   top: -11%;
+   padding: 20px;
+   width: 550px;
+   height: 400px;
+   background-color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+  
+}
+.cardDetial img{
+    
+    width: 180px;
+    height: 250px;
+}
+.cardDetial .he{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+ 
+}
+.cardDetial button{
+    width: 100%;
+    margin-top: 20px;
+    height: 32px;
+    border-radius: 17px;
+    border: none;
+    font-weight: 400;
+    background-color:orange;
+    color: #fff;
+}
+.cardDetial .close{
+    color: #fff;
+    background-color: #ff0000;
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.cardDetial input{
+    width: 100%;
+    padding: 6px;
+    font-size: 20px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+/* responsice */
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main img {
+        width: 100%; /* Adjust image width for smaller screens */
+    }
+    .main h1 {
+        font-size: 42px; /* Adjust font size for smaller screens */
+    }
+    /* Add more responsive adjustments as needed */
+}
+
+/* For medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* CSS rules for medium screens */
+}
+
+/* For larger screens */
+@media only screen and (min-width: 1025px) {
+    /* CSS rules for larger screens */
+}
